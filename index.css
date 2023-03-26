@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+}
+
+header {
+    padding: 46px 46px 60px 46px;
+    background-image: url('images/bg-img.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+main, header {
+    box-sizing: border-box;
+    width: 600px;
+}
+
+main {
+    margin: auto;
+    padding: 10px 30px;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 39px;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+h1, h3 {
+    color: white;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Menu items */
+
+.item {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #D2D2D2;
+}
+
+.item-info {
+    width: 360px;
+}
+
+.ingredients {
+    color: #8B8B8B;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.price span {
+    font-size: 14px;
+}
+
+.item-img {
+    margin-right: 10px;
+}
+
+.add-btn {
+    background-color: white;
+    border: solid 1px #DEDEDE;
+    color: #3C3C3C;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 0.5;
+}
+
+.add-btn-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+/* Order */
+
+.order {
+    display: none;
+    margin: 25px 0 100px 0;
+    text-align: center;
+}
+
+.order-info {
+    margin: 65px 0 30px 0;
+}
+
+.order-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-name h2 {
+    margin: 0;
+}
+
+.remove-btn p {
+    color: #8B8B8B;
+    font-size: 16px;
+}
+
+.order-name {
+    margin-right: 20px;
+}
+
+.name-remove {
+    display: flex;
+    align-items: center;
+}
+
+.remove-btn {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+}
+
+.order-total h2 {
+    margin: 0;
+}
+
+.total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 0 50px 0;
+}
+
+.red-button {
+    background-color: #E14D19;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+hr {
+    border: 2px solid #393333;
+}
+
+/* Payment */
+
+.payment-window {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+    background: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 50px 25px 30px 25px;
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #757575;
+}
+
+.payment-heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.pay-btn {
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    background-color: #E14D19;
+    color: white;
+    font-weight: 700;
+}
+
+input,
+form .red-button {
+    width: 100%;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+/* Thanks block */
+
+.thanks-block {
+    display: none;
+    padding: 50px 0;
+    margin: 30px 0;
+    text-align: center;
+    background-color: #ECFDF5;
+}
+
+.thanks-block h2 {
+    margin: 0;
+    color: #065F46;
+    font-size: 32px;
+}

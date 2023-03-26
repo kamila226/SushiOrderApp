@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kamila's Sushi</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Smythe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Kamila's Sushi</h1>
+        <h3>The best sushi in town.</h3>
+    </header>
+    <main>
+        <div id="menu-container"></div>
+        <div class="order" id="order">
+            <h2>Your order</h2>
+            <div class="order-info" id="order-info">
+
+            </div>
+            <div class="order-total">
+                <hr>
+                <div class="total-price">
+                    <div>
+                        <h2>Total price:</h2>
+                    </div>
+                    <div class="price"><h4 id="total-price"></h4></div>
+                </div>
+            </div>
+            <div>
+                <button class="red-button" id="complete-order-btn">Complete order</button>
+            </div>
+        </div>
+        <div class="thanks-block" id="thanks-block">
+            <h2 id="thanks-text"></h2>
+        </div>
+    </main>
+
+    <div class="payment-window" id="payment-window">
+        <div>
+            <h2 class="payment-heading">Enter payment details</h2>
+        </div>
+
+        <div class="card-details">
+            <form id="payment-form">
+                <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required/>
+                <input
+                        type="tel"
+                        id="card-number"
+                        name="card-number"
+                        placeholder="Enter card number"
+                        required/>
+                <input
+                        type="tel"
+                        id="card-ccv"
+                        name="card-ccv"
+                        placeholder="Enter CCV"
+                        required/>
+                <div>
+                    <button type="submit" class="red-button" id="pay-btn">PAY</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
