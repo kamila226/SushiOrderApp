@@ -46,7 +46,11 @@ function removeItem(itemId) {
     const elementToRemove = document.getElementById(itemId);
     totalPrice -= elementToRemove.getElementsByClassName("price")[0].textContent.substring(1);
     elementToRemove.remove();
-    renderPrice();
+    if (totalPrice === 0) {
+        document.getElementById("order").style.display = "none";
+    } else {
+        renderPrice();
+    }
 }
 
 function showPaymentWindow() {
